@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92189952-cf43-4abc-b8c1-b554b4362128}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath>..\..\..\..\..\Panda3D-1.8.0\direct\;src\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{1e8afb34-3902-46a7-b3a4-c33c628cb28d}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="docs\1  INSTALLATION NOTES.TXT" />
+    <Content Include="docs\2  LEARNING SNAP.TXT" />
+    <Content Include="docs\3  MAKING AN EXPERIMENT MODULE.TXT" />
+    <Content Include="docs\4  MAKING A STUDY.TXT" />
+    <Content Include="docs\INSTALLATION NOTES.TXT" />
+    <Content Include="src\framework\console\QUAKE-STYLE CONSOLE.txt" />
+    <Content Include="src\LEARNING SNAP.TXT" />
+    <Content Include="src\logs\MARKER LOGS ETC GO HERE.txt" />
+    <Content Include="src\media\SHARED MEDIA GOES HERE.txt" />
+    <Content Include="src\modules\BCI\SAMPLE CODE %28MEDIA NOT INCLUDED%29.txt" />
+    <Content Include="src\modules\DAS\LARGE SAMPLE CODE %28MEDIA NOT INCLUDED%29.txt" />
+    <Content Include="src\modules\Flanker\SAMPLE CODE %28MEDIA NOT INCLUDED%29.txt" />
+    <Content Include="src\modules\LSE\LARGE SAMPLE CODE FOR 3 COMPUTERS %28MEDIA NOT INCLUDED%29.txt" />
+    <Content Include="src\modules\MAKING AN EXPERIMENT MODULE.TXT" />
+    <Content Include="src\modules\MBF\LARGE SAMPLE CODE %28MEDIA NOT INCLUDED%29.txt" />
+    <Content Include="src\modules\Speech\SAMPLE CODE %28MEDIA NOT INCLUDED%29.txt" />
+    <Content Include="src\pylsl\readme.txt" />
+    <Content Include="src\studies\MAKING A STUDY.TXT" />
+    <Content Include="src\studies\SampleStudy\ball.png" />
+    <Content Include="src\studies\SampleStudy\CONTENTS.txt" />
+    <Content Include="src\studies\SampleStudy\monkey.jpg" />
+    <Content Include="src\studies\SampleStudy\tool.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\framework\basicstimuli.py" />
+    <Compile Include="src\framework\eventmarkers\eventmarkers.py" />
+    <Compile Include="src\framework\eventmarkers\__init__.py" />
+    <Compile Include="src\framework\latentmodule.py" />
+    <Compile Include="src\framework\navigation\navigation.py" />
+    <Compile Include="src\framework\navigation\pyrecast.py" />
+    <Compile Include="src\framework\navigation\__init__.py" />
+    <Compile Include="src\framework\speech_io\speech.py" />
+    <Compile Include="src\framework\speech_io\__init__.py" />
+    <Compile Include="src\framework\tickmodule.py" />
+    <Compile Include="src\framework\ui_elements\AudioPresenter.py" />
+    <Compile Include="src\framework\ui_elements\BroadcastPresenter.py" />
+    <Compile Include="src\framework\ui_elements\EventWatcher.py" />
+    <Compile Include="src\framework\ui_elements\ImagePresenter.py" />
+    <Compile Include="src\framework\ui_elements\MessagePresenter.py" />
+    <Compile Include="src\framework\ui_elements\RandomPresenter.py" />
+    <Compile Include="src\framework\ui_elements\ScrollPresenter.py" />
+    <Compile Include="src\framework\ui_elements\TextPresenter.py" />
+    <Compile Include="src\framework\ui_elements\WorldspaceGizmos.py" />
+    <Compile Include="src\framework\ui_elements\__init__.py" />
+    <Compile Include="src\framework\__init__.py" />
+    <Compile Include="src\launcher.py" />
+    <Compile Include="src\modules\BCI\AlphaCalibration.py" />
+    <Compile Include="src\modules\BCI\ControllableBar.py" />
+    <Compile Include="src\modules\BCI\MotorImag.py" />
+    <Compile Include="src\modules\DAS\DAS1a.py" />
+    <Compile Include="src\modules\DAS\DAS1b.py" />
+    <Compile Include="src\modules\Flanker\flanker_arrows.py" />
+    <Compile Include="src\modules\LSE\LSE_GameClient.py" />
+    <Compile Include="src\modules\LSE\LSE_GameServer.py" />
+    <Compile Include="src\modules\MBF\MBF2_A.py" />
+    <Compile Include="src\modules\MBF\MBF2_B.py" />
+    <Compile Include="src\modules\Sample1.py" />
+    <Compile Include="src\modules\Sample2.py" />
+    <Compile Include="src\modules\Sample3.py" />
+    <Compile Include="src\modules\Speech\natural_speech.py" />
+    <Compile Include="src\modules\Speech\obj_animals.py" />
+    <Compile Include="src\modules\Speech\speech_blocked.py" />
+    <Compile Include="src\modules\Speech\speech_randomized.py" />
+    <Compile Include="src\pylsl\binaries-python2.4-win32\liblsl.py" />
+    <Compile Include="src\pylsl\binaries-python2.5-win32\liblsl.py" />
+    <Compile Include="src\pylsl\binaries-python2.6-win32\liblsl.py" />
+    <Compile Include="src\pylsl\binaries-python2.7-win32\liblsl.py" />
+    <Compile Include="src\pylsl\binaries-python2.7-win64\liblsl.py" />
+    <Compile Include="src\pylsl\binaries-python3.0-win32\liblsl.py" />
+    <Compile Include="src\pylsl\binaries-python3.1-win32\liblsl.py" />
+    <Compile Include="src\pylsl\binaries-python3.2-win32\liblsl.py" />
+    <Compile Include="src\pylsl\examples\ReceiveData.py" />
+    <Compile Include="src\pylsl\examples\ReceiveStringMarkers.py" />
+    <Compile Include="src\pylsl\examples\SendData.py" />
+    <Compile Include="src\pylsl\examples\SendDataAdvanced.py" />
+    <Compile Include="src\pylsl\examples\SendStringMarkers.py" />
+    <Compile Include="src\pylsl\pylsl.py" />
+    <Compile Include="src\pylsl\__init__.py" />
+    <Compile Include="src\rpyc\core\async.py" />
+    <Compile Include="src\rpyc\core\brine.py" />
+    <Compile Include="src\rpyc\core\channel.py" />
+    <Compile Include="src\rpyc\core\consts.py" />
+    <Compile Include="src\rpyc\core\netref.py" />
+    <Compile Include="src\rpyc\core\protocol.py" />
+    <Compile Include="src\rpyc\core\service.py" />
+    <Compile Include="src\rpyc\core\stream.py" />
+    <Compile Include="src\rpyc\core\vinegar.py" />
+    <Compile Include="src\rpyc\core\__init__.py" />
+    <Compile Include="src\rpyc\lib\colls.py" />
+    <Compile Include="src\rpyc\lib\compat.py" />
+    <Compile Include="src\rpyc\lib\__init__.py" />
+    <Compile Include="src\rpyc\utils\authenticators.py" />
+    <Compile Include="src\rpyc\utils\classic.py" />
+    <Compile Include="src\rpyc\utils\factory.py" />
+    <Compile Include="src\rpyc\utils\helpers.py" />
+    <Compile Include="src\rpyc\utils\registry.py" />
+    <Compile Include="src\rpyc\utils\server.py" />
+    <Compile Include="src\rpyc\utils\ssh.py" />
+    <Compile Include="src\rpyc\utils\__init__.py" />
+    <Compile Include="src\rpyc\version.py" />
+    <Compile Include="src\rpyc\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="docs" />
+    <Folder Include="src" />
+    <Folder Include="src\framework" />
+    <Folder Include="src\framework\console" />
+    <Folder Include="src\framework\eventmarkers" />
+    <Folder Include="src\framework\navigation" />
+    <Folder Include="src\framework\speech_io" />
+    <Folder Include="src\framework\ui_elements" />
+    <Folder Include="src\logs" />
+    <Folder Include="src\media" />
+    <Folder Include="src\modules" />
+    <Folder Include="src\modules\BCI" />
+    <Folder Include="src\modules\DAS" />
+    <Folder Include="src\modules\Flanker" />
+    <Folder Include="src\modules\LSE" />
+    <Folder Include="src\modules\MBF" />
+    <Folder Include="src\modules\Speech" />
+    <Folder Include="src\pylsl" />
+    <Folder Include="src\pylsl\binaries-python2.4-win32" />
+    <Folder Include="src\pylsl\binaries-python2.5-win32" />
+    <Folder Include="src\pylsl\binaries-python2.6-win32" />
+    <Folder Include="src\pylsl\binaries-python2.7-win32" />
+    <Folder Include="src\pylsl\binaries-python2.7-win64" />
+    <Folder Include="src\pylsl\binaries-python3.0-win32" />
+    <Folder Include="src\pylsl\binaries-python3.1-win32" />
+    <Folder Include="src\pylsl\binaries-python3.2-win32" />
+    <Folder Include="src\pylsl\examples" />
+    <Folder Include="src\rpyc" />
+    <Folder Include="src\rpyc\core" />
+    <Folder Include="src\rpyc\lib" />
+    <Folder Include="src\rpyc\utils" />
+    <Folder Include="src\studies" />
+    <Folder Include="src\studies\SampleStudy" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{1e8afb34-3902-46a7-b3a4-c33c628cb28d}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
