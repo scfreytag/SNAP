@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{92189952-cf43-4abc-b8c1-b554b4362128}</ProjectGuid>
     <ProjectHome />
-    <StartupFile />
+    <StartupFile>RunAPandaWorld.py</StartupFile>
     <SearchPath>..\..\..\..\..\Panda3D-1.8.0\direct\;src\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -45,6 +45,8 @@
     <Content Include="src\studies\SampleStudy\tool.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PandaWorld.py" />
+    <Compile Include="RunAPandaWorld.py" />
     <Compile Include="src\framework\basicstimuli.py" />
     <Compile Include="src\framework\eventmarkers\eventmarkers.py" />
     <Compile Include="src\framework\eventmarkers\__init__.py" />
@@ -122,6 +124,7 @@
     <Compile Include="src\rpyc\utils\__init__.py" />
     <Compile Include="src\rpyc\version.py" />
     <Compile Include="src\rpyc\__init__.py" />
+    <Compile Include="tobii.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="docs" />
