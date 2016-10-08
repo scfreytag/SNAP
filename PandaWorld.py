@@ -36,6 +36,8 @@ class World:
         self._gridColor = "grey50"
         self._innerGridColor = "grey20"
 
+        self._upperOffset = 50
+
         # game
         self.coords_line1 = (self.coord_start, 0, self.coord_start, self.screenHeight)
 
@@ -100,6 +102,21 @@ class World:
         self.canvas.create_line(self.thirdWidth*2, 0, self.thirdWidth*2, self.screenHeight, fill = self._gridColor, tag = "border")
         self.canvas.update()
 
+    def createBrick(self):
+        b = Brick()
+        b.draw_size()
+        # draw random position slot or draw from middle
+        self.canvas.create_rectangle(self.halfWidth - (b._width*self.fifthInnerWidt), 
+                                     0+ self._upperOffset, 
+                                     self.halfWidth + (b._width*self.fifthInnerWidt), 
+                                     0+self._upperOffset+ b._height*self.fifthInnerWidt,
+                                     color = b._color, tag = "brick")
+        print(b)
+        self.canvas.update()
+
+    def moveBrick(self):
+        pass
+
    # TODO: calculate delta Time
     def updateAndRender(self):
        self.root.after(self._updateRate, self.updateAndRender)
@@ -109,6 +126,10 @@ class World:
         self.createScreen()
         self.createBorder()
         self.createGrid()
+        #dummy to test
+
+        self.createBrick()
+
 
         self.lastUpdateTime = time.time()
         self.root.after(self._updateRate, self.updateAndRender)
@@ -125,8 +146,16 @@ class Brick(object):
     def __init__(self):
         self._width = None
         self._height = None
+        self._color = None
+
+        self.isSettled = False
 
     def draw_size(self):
         self._width = random.randint(1,2)
         self._height = random.randint(2,3)
+
+    def draw_color(self):
+        # to do: randomize from list
+        self._color = "green"
+
 
