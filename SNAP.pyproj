@@ -45,6 +45,7 @@
     <Content Include="src\studies\SampleStudy\tool.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataCoord.py" />
     <Compile Include="PandaWorld.py" />
     <Compile Include="RunAPandaWorld.py" />
     <Compile Include="src\framework\basicstimuli.py" />

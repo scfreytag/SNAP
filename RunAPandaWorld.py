@@ -66,5 +66,6 @@ taskMgr.add(w.Update, 'MainUpdateLoop')
 tobii.addGazeCallback(w.processGaze)
 tobii.connect()
 
-
+w.test
+w.startRendering()
 run()
